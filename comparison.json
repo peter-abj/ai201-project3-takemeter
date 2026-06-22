@@ -1,0 +1,87 @@
+{
+  "baseline_accuracy": 0.533,
+  "finetuned_accuracy": 0.8167,
+  "accuracy_improvement": 0.255,
+  "baseline_results": {
+    "accuracy": 0.533,
+    "unparseable_count": 2,
+    "total_test": 60,
+    "successful_predictions": 58,
+    "per_class_metrics": {
+      "Structural Analysis": {
+        "precision": 0.556,
+        "recall": 0.667,
+        "f1": 0.607
+      },
+      "Thematic Interpretation": {
+        "precision": 0.545,
+        "recall": 0.417,
+        "f1": 0.471
+      },
+      "Reaction": {
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1": 0.545
+      }
+    },
+    "confusion_matrix": [
+      [
+        8,
+        2,
+        2
+      ],
+      [
+        3,
+        5,
+        2
+      ],
+      [
+        2,
+        2,
+        12
+      ]
+    ]
+  },
+  "finetuned_results": {
+    "accuracy": 0.8167,
+    "per_class_metrics": {
+      "Structural Analysis": {
+        "precision": 0.778,
+        "recall": 0.889,
+        "f1": 0.83
+      },
+      "Thematic Interpretation": {
+        "precision": 0.833,
+        "recall": 0.75,
+        "f1": 0.789
+      },
+      "Reaction": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8
+      }
+    },
+    "confusion_matrix": [
+      [
+        16,
+        1,
+        1
+      ],
+      [
+        2,
+        12,
+        1
+      ],
+      [
+        0,
+        4,
+        12
+      ]
+    ]
+  },
+  "criteria_met": {
+    "Overall accuracy > 70%": true,
+    "All F1 scores \u2265 0.65": true,
+    "Beats baseline": true
+  }
+}
